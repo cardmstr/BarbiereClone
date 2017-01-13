@@ -1,0 +1,26 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav{
+  display:none;
+}
+
+button{
+  border: 0px;
+  padding:20px;
+  font-family:sans-serif;
+  font-weight: bold;
+  background-color: #595B5D;
+}
+
+/*desktop adjustments*/
+@media screen and (min-width:770px) {
+  .hamburger{
+    display: none;
+  }
+  nav{
+    display: block;
+  }
+}
