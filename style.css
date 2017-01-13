@@ -1,10 +1,28 @@
 * {
   text-decoration: none;
+  font-family: sans-serif;
   box-sizing: border-box;
+}
+
+html,body{
+  height:100%;
+  width:100%;
+  margin: 0px 0px 0px 0px;
 }
 
 nav{
   display:none;
+  margin-left:auto;
+}
+
+header{
+  height: 50px;
+  display: flex;
+  background-color: #F4FAF8;
+  position: fixed;
+  right:0;
+  width: 100%;
+  top: 0;
 }
 
 button{
@@ -12,7 +30,81 @@ button{
   padding:20px;
   font-family:sans-serif;
   font-weight: bold;
-  background-color: #595B5D;
+  background-color: #F4FAF8;
+}
+
+hr{
+  margin: 0 0 0 0;
+}
+
+p{
+  margin:0 auto;
+  max-width: 480px;
+}
+
+.co-name{
+  margin: 10px;
+  display:flex;
+  flex-direction: column;
+}
+
+.hamburger{
+  margin-left: auto;
+}
+
+.nav-item{
+  padding:10px;
+}
+
+.banner-container{
+  margin-top: 50px;
+  min-height:200px;
+  background-image:url("assets/BarbSLC-6.jpg");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
+
+.banner-logo{
+  width:140px;
+  margin-bottom: 25px;
+}
+
+.banner-logo img{
+  width: 100%;
+}
+
+.definition{
+  min-height:180px;
+  background-color: #E9F2EE;
+  padding: 40px 0;
+}
+
+.about-shop{
+  min-height: 180px;
+  background-color: #F4FAF8;
+}
+
+.news-link{
+  min-height:30px;
+  background-color: #E9F2EE;
+  text-align: center;
+  padding:5px;
+}
+
+.book-appointment{
+  min-height:420px;
+  background-color: #3B4650;
+}
+
+.get-in-touch{
+  min-height: 220px;
+  background-color: #F4FAF8;
+  text-align: center;
 }
 
 /*desktop adjustments*/
@@ -20,7 +112,17 @@ button{
   .hamburger{
     display: none;
   }
+  .banner-container{
+    min-height:400px;
+  }
+  .banner-logo{
+    width:400px;
+  }
+  button{
+    font-size: 27px;
+  }
+
   nav{
-    display: block;
+    display: flex;
   }
 }
